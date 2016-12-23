@@ -3,7 +3,8 @@ import * as actions from '../../src/actions'
 import {
   INCREASE_BY,
   DECREASE_BY,
-  SET_VALUE
+  SET_VALUE,
+  SET_TO_ZERO
  } from '../../src/actions/types'
 
 describe('action creators', ()=>{
@@ -35,6 +36,16 @@ describe('action creators', ()=>{
     }
     expect(
       actions.setValue(3)
+    ).to.eql(output)
+  })
+
+  it('setCounterToZero()',()=>{
+    let output = {
+      type: SET_TO_ZERO,
+      payload: 0
+    }
+    expect(
+      actions.setCounterToZero()
     ).to.eql(output)
   })
 

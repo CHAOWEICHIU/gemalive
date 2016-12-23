@@ -1,5 +1,9 @@
 import React from 'react'
 
 export default ({counter}) => {
-  return <div>{counter}</div>
+  return (
+    <div>
+      Current Value: {counter}
+    </div>
+  )
 }
