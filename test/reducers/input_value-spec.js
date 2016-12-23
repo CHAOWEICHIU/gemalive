@@ -2,7 +2,7 @@ import { expect } from 'chai'
 import reducer from '../../src/reducers/input_value'
 import { INCREASE_BY, DECREASE_BY, SET_VALUE } from '../../src/actions/types'
 
-describe('counter reducer', ()=>{
+describe('inputValue reducer', ()=>{
   let input, output
   beforeEach(()=>{
     input = ''
