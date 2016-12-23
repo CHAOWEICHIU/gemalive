@@ -1,4 +1,4 @@
-import { INCREASE_BY, DECREASE_BY } from './types'
+import { INCREASE_BY, DECREASE_BY, SET_VALUE } from './types'
 
 export const increaseBy = num => ({
   type: INCREASE_BY,
@@ -7,5 +7,10 @@ export const increaseBy = num => ({
 
 export const decreaseBy = num => ({
   type: DECREASE_BY,
+  payload: parseInt(num)
+})
+
+export const setValue = num => ({
+  type: SET_VALUE,
   payload: parseInt(num)
 })
