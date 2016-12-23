@@ -5,10 +5,10 @@
   "main": "index.js",
   "repository": "https://github.com/CHAOWEICHIU/react-starter.git",
   "scripts": {
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
+    "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot",
+    "test": "mocha --compilers js:babel-core/register --recursive ./test",
     "test:watch": "npm run test -- --watch",
-    "push": "git add . && git commit -m 'Edited README' && git push origin master"
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
   },
   "author": "chao wei chiu",
   "license": "ISC",
